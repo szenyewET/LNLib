@@ -1,14 +1,23 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'LNLib_Example' do
   pod 'LNLib', :path => '../'
+  pod 'SwifterSwift'
 
   target 'LNLib_Tests' do
     inherit! :search_paths
 
     pod 'Quick', '~> 2.2.0'
     pod 'Nimble', '~> 10.0.0'
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "13.0"
+    end
   end
 end
