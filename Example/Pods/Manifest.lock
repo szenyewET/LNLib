@@ -1,0 +1,27 @@
+PODS:
+  - LNLib (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - LNLib (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  LNLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LNLib: d4828defa27dda89579c948541b302c5a991770a
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: 64038895b436160f1c9bc8232a61d73f6adaecb1
+
+COCOAPODS: 1.16.2
